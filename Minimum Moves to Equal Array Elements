@@ -1,0 +1,23 @@
+class Solution {
+    public int minMoves(int[] nums) {
+        int counter =0;
+            if(nums.length > 0) {
+        // find the smallest value
+        int smallest = nums[0];
+        for(int i=1; i<nums.length; i++) {
+            if(smallest > nums[i]) {
+                smallest = nums[i];
+            }
+        }
+        
+        // increment count by the difference between number and smallest
+        for(int i=0; i<nums.length; i++) {
+            counter += (nums[i] - smallest);
+        }
+    }
+    
+    return counter;
+
+        
+    }
+}
