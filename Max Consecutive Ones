@@ -1,0 +1,23 @@
+int tempAns=0;
+int ans=0;
+public int findMaxConsecutiveOnes(int[] nums) {
+    
+    for (int i=0;i<nums.length;i++){
+        
+        if (nums[i]==1){
+            tempAns++;
+        }
+
+          if (ans<tempAns){
+                ans=tempAns;
+        }  
+        
+        if(nums[i]==0){
+    
+            tempAns=0;
+        }
+        
+    }
+    
+    
+    return ans; 
