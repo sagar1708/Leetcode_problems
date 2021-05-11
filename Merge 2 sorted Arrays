@@ -8,7 +8,7 @@ class Solution {
                 tempPos += 1;
             }
         }
-        // Only for Heavy Drivers
+       
         Arrays.sort(nums1);
     }
 }
