@@ -7,6 +7,6 @@ public int[] twoSum(int[] nums, int target) {
             }
         }
     }
-    throw new IllegalArgumentException("No solution");
+    throw new IllegalArgumentException("No Solution");
 }
 }
