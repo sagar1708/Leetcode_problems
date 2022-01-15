@@ -1,0 +1,19 @@
+
+import java.util.Arrays;
+
+public class HelloWorld{
+    
+    
+    public static int kElement( int[] arr, int k){
+        int n = arr.length;
+        Arrays.sort(arr);
+        return arr[n - k];
+        
+    }
+
+     public static void main(String []args){
+         int[] arr = {1,4,6,8,9,11};
+         int k = 4;
+        System.out.println(kElement(arr,k));
+     }
+}
